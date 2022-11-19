@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* Wrapper */
+/* Header */
+.dropdown-toggle::after{
+  display: none;
+}
+
+.search{
+  background-color: rgb(235, 235, 235);
+  border: none;
+}
+
+/* Side bar*/
+.side-bar-width{
+  width: 50px;
+}
+/* Main */
+ /* Top bar */
+/* Footer */
+/* Utils */ 
+  /* Display */
+    /* Flex */
+
+/* Media */
