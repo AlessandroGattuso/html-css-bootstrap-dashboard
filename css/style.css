@@ -9,9 +9,30 @@ html{
 }
 
 /* Wrapper */
+aside,
+main{
+  height: calc(100vh - 76px);
+}
+.icon-container{
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+aside .icon-container:hover{
+  background-color: gray;
+}
+
+i{
+  cursor: pointer;
+}
+
 /* Header */
 .dropdown-toggle::after{
   display: none;
+}
+
+.logo-mobile{
+  width: 50px;
 }
 
 .search{
@@ -20,14 +41,60 @@ html{
 }
 
 /* Side bar*/
-.side-bar-width{
+aside{
+  position: fixed;
+  width: 70px;
+  background-color: rgb(5,30,52);
+}
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+}
+
+aside .icon-container div{
+  margin: 0 auto;
   width: 50px;
 }
+
 /* Main */
+main{
+  width: calc(100vw - 70px);
+  margin-top: 76px;
+  margin-left: 70px;
+}
  /* Top bar */
 /* Footer */
 /* Utils */ 
   /* Display */
     /* Flex */
-
+    .gap-2{
+      gap: 20px;
+    }
+  /* Cursor */
+  .cursor-pointer{
+    cursor: pointer;
+  }
 /* Media */
+
+  /* Desktop */
+  @media all  and (min-width: 992px){
+    aside,
+    main{
+      height: calc(100vh - 56px);
+    } 
+
+    aside{
+      width: 150px;
+    }
+
+    aside .icon-container div{
+      width: 80px;
+    }
+
+    main{
+      margin-top: 56px;
+      margin-left: 150px;
+      width: calc(100vw - 150px);
+    }
+  }
