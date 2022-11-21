@@ -22,10 +22,6 @@ aside .icon-container:hover{
   background-color: gray;
 }
 
-i{
-  cursor: pointer;
-}
-
 /* Header */
 .dropdown-toggle::after{
   display: none;
@@ -64,6 +60,16 @@ main{
   margin-left: 70px;
 }
  /* Top bar */
+ #top-bar .badge:hover{
+  cursor: pointer;
+  background-color: rgb(15, 72, 146);
+ }
+
+ .chevrons-container{
+  font-size: 14px;
+ }
+
+
 /* Footer */
 /* Utils */ 
   /* Display */
@@ -74,6 +80,14 @@ main{
   /* Cursor */
   .cursor-pointer{
     cursor: pointer;
+  }
+  /* Background */
+  .bg-darkblue{
+    background-color: rgb(21,92,186);
+  }
+  /* Margin */
+  .negative-ml{
+    margin-left: -8px;
   }
 /* Media */
 

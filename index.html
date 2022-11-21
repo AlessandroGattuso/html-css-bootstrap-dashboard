@@ -20,7 +20,7 @@
   <!-- style file link -->
   <link rel="stylesheet" href="./css/style.css">
 
-  <title>Document</title>
+  <title>html-css-bootstrap-dashboard</title>
 </head>
 <body>
 
@@ -103,7 +103,41 @@
   </aside>
 
   <!-- Main -->
-  <main></main>
+  <main>
+    <div id="top-bar" class="bg-primary text-white py-4 px-2">
+      <div class="container-fluid">
+        <div class="row flex-column flex-sm-row justify-content-between">
+          <div class="col col-lg-3 order-sm-3">
+            <span class="me-3">Nuovo studente</span>
+            <button class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="col col-lg-6 order-sm-1">
+            <div class="row flex-column">
+              <div class="col">
+                <span class="fs-3">Boolean</span>
+                <span class="badge rounded-pill fw-normal bg-darkblue">Piano blaze</span>
+              </div>
+              <div class="col">
+                <span class="badge rounded-pill fw-normal bg-darkblue">3 app</span>
+                <div class="d-inline chevrons-container">
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <i class="fa-solid fa-chevron-right negative-ml"></i>
+                </div>
+                <span class="d-lg-none badge rounded-pill fw-normal bg-darkblue"><i class="fa-solid fa-plus"></i></span>
+                <span class="d-none d-lg-inline badge rounded-pill fw-normal bg-darkblue">Boolean mobile app<i class="fa-solid fa-plus"></i></span>
+                <span class="d-none d-lg-inline badge rounded-pill fw-normal bg-darkblue">Boolean web app<i class="fa-solid fa-plus"></i></span>
+                <span class="d-none d-lg-inline badge rounded-pill fw-normal bg-darkblue">Boolean blog app<i class="fa-solid fa-plus"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 order-sm-2">
+            <span class="d-block">Studenti online negli ultimi 30 minuti</span>
+            <span class="fs-3">125</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- Footer -->
   <footer></footer>
