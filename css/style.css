@@ -58,6 +58,7 @@ main{
   width: calc(100vw - 70px);
   margin-top: 76px;
   margin-left: 70px;
+  overflow-y: scroll;
 }
  /* Top bar */
  #top-bar .badge:hover{
@@ -69,8 +70,53 @@ main{
   font-size: 14px;
  }
 
+ #content{
+  height: auto;
+  background-color: rgb(243, 243, 243);
+ }
 
-/* Footer */
+ .card-head{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  background-color: rgb(245, 245, 245);
+ }
+
+ table tr,
+ table th{
+  text-align: center;
+ }
+
+ table td:first-child,
+ table th:first-child{
+  text-align: left;
+ }
+
+ .class-avatar{
+  width: 30px;
+  background-color: white;
+ }
+
+ .action-content{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+ }
+ 
+ .action-btn{
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: gray;
+  transition: all 0.5s ease;
+ }
+
+ .action-btn:hover{
+  color: rgb(243, 243, 243);
+  background-color: gray;
+ }
+
 /* Utils */ 
   /* Display */
     /* Flex */
@@ -88,6 +134,10 @@ main{
   /* Margin */
   .negative-ml{
     margin-left: -8px;
+  }
+  /* Border */
+  .bg-border-lightgray{
+    border-color: rgb(215, 215, 215);
   }
 /* Media */
 
