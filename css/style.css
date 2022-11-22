@@ -36,6 +36,14 @@ aside .icon-container:hover{
   border: none;
 }
 
+header a[aria-expanded="true"] i{
+  color: rgb(235, 153, 0) !important;
+}
+
+#bell-menu{
+  top: 50px;
+  right: 10px;
+}
 /* Side bar*/
 aside{
   position: fixed;
@@ -68,6 +76,10 @@ main{
 
  .chevrons-container{
   font-size: 14px;
+ }
+
+ .offcanvas{
+  width: 100% !important;
  }
 
  #content{
@@ -160,5 +172,9 @@ main{
       margin-top: 56px;
       margin-left: 150px;
       width: calc(100vw - 150px);
+    }
+
+    .offcanvas{
+      width: 50% !important;
     }
   }

@@ -27,7 +27,7 @@
   <!-- Header -->
   <header class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid bg-white">
+      <div class="container-fluid bg-white gap-1">
         <a class="navbar-brand" href="#">
           <img class="d-lg-none logo-mobile" src="./img/mobile-logo.png" alt="Image not found">
           <img class="d-none d-lg-block" src="./img/logo.svg" alt="Image not found">
@@ -49,16 +49,11 @@
               <i class="fa-solid fa-circle-question"></i>
             </a>
           </li>
-          <li class="nav-item d-none d-lg-block">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-            </a>
-          </li>
           <li class="nav-item">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-bell text-warning"></i>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul id="bell-menu" class="dropdown-menu dropdown-menu-end position-absolute">
               <li><button class="dropdown-item" type="button">Profilo</button></li>
               <li><button class="dropdown-item" type="button">Fatturazione</button></li>
               <li><button class="dropdown-item" type="button">Logout</button></li>
@@ -248,7 +243,7 @@
                       <tr>
                         <th scope="col">Nome</th>
                         <th class="d-none d-lg-table-cell">Data inizio</th>
-                        <th class="d-none d-sm-block" scope="col">ROI</th>
+                        <th class="d-none d-sm-table-cell" scope="col">ROI</th>
                         <th scope="col">Stato</th>
                         <th scope="col">Azioni</th>
                       </tr>
